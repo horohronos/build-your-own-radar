@@ -281,7 +281,7 @@ function plotForm (content) {
   content.append('div')
     .attr('class', 'input-sheet__form')
     .append('p')
-    .html('<strong>Enter the URL of your <a href="https://www.thoughtworks.com/radar/how-to-byor" target="_blank">Google Sheet or CSV</a> file below…</strong>')
+    .html('<strong>Enter the URL of your Google Sheet or CSV file below…</strong>')
 
   var form = content.select('.input-sheet__form').append('form')
     .attr('method', 'get')
@@ -298,7 +298,6 @@ function plotForm (content) {
     .attr('class', 'button')
     .text('Build my radar')
 
-  form.append('p').html("<a href='https://www.thoughtworks.com/radar/how-to-byor'>Need help?</a>")
 }
 
 function plotErrorMessage (exception) {
